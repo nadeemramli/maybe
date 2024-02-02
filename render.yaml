@@ -7,7 +7,7 @@ services:
       name: design-system
       env: static
       buildCommand: pnpm install && NODE_ENV=production pnpm nx run design-system:build-storybook # NODE_ENV=production is required to fix this issue: https://github.com/nrwl/nx/issues/8403
-      staticPublishPath: nadeemramli/maybe/dist/storybook/design-system
+      staticPublishPath: dist/storybook/design-system
       autoDeploy: true
       domains:
 
